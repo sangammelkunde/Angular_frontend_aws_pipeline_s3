@@ -11,7 +11,7 @@ phases:
         nodejs: 16
     commands:
         - echo Installing source NPM dependencies...
-        - yarn insatll && npm install 
+        - yarn install && npm install 
         - npm install -g @angular/cli
   build:
     commands:
