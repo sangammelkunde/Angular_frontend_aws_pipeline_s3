@@ -7,9 +7,9 @@ import { TweetResponse } from 'src/app/model/tweetResponse.model';
 import { TweetUpdate } from 'src/app/model/tweetUpdate.model';
 import {map} from 'rxjs/operators';
 
-const API_URL = "http://end-tweet-elb-1790219837.us-east-1.elb.amazonaws.com/api/v1.0"
-export const Search_URL = "http://end-tweet-elb-1790219837.us-east-1.elb.amazonaws.com/api/v1.0/tweets/user/search/";
-export const Search_User_URL = "http://end-tweet-elb-1790219837.us-east-1.elb.amazonaws.com/api/v1.0/tweets/user/profile/";
+const API_URL = "http://iiht-tweetapp-elb-243327866.us-east-1.elb.amazonaws.com/api/v1.0"
+export const Search_URL = "http://iiht-tweetapp-elb-243327866.us-east-1.elb.amazonaws.com/api/v1.0/tweets/user/search/";
+export const Search_User_URL = "http://iiht-tweetapp-elb-243327866.us-east-1.elb.amazonaws.com/api/v1.0/tweets/user/profile/";
 
 
 @Injectable({

@@ -4,8 +4,8 @@ import { AuthenticationRequest } from 'src/app/model/authentication-request.mode
 import {map} from 'rxjs/operators';
 import { NewPassword } from 'src/app/model/newpassword.model';
 
-const API_URL = "http://end-tweet-elb-1790219837.us-east-1.elb.amazonaws.com/api/v1.0/tweets/login";
-export const Forgot_URL="http://end-tweet-elb-1790219837.us-east-1.elb.amazonaws.com/api/v1.0/tweets";
+const API_URL = "http://iiht-tweetapp-elb-243327866.us-east-1.elb.amazonaws.com/api/v1.0/tweets/login";
+export const Forgot_URL="http://iiht-tweetapp-elb-243327866.us-east-1.elb.amazonaws.com/api/v1.0/tweets";
 
 @Injectable({
   providedIn: 'root'
