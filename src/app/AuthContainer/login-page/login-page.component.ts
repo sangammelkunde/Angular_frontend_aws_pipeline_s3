@@ -68,7 +68,6 @@ export class LoginPageComponent implements OnInit {
       sessionStorage.setItem("lastName",successData.lastName);
       sessionStorage.setItem("password",successData.password);
       this.router.navigate(['/home']);
-      });
       // console.log(successData)
     },failureData => {
       // console.log("fail");
