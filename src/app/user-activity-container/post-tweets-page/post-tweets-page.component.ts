@@ -33,7 +33,7 @@ export class PostTweetsPageComponent implements OnInit {
   todaysDataTime = '';
 
   constructor(public router : Router, formBuilder : FormBuilder , public postTweetService : TweetsService) { 
-    this.todaysDataTime = formatDate(this.today, 'dd-MM-yyyy HH:mm:ss', 'en-US', '+0530')
+    // this.todaysDataTime = formatDate(this.today, 'dd-MM-yyyy HH:mm:ss', 'en-US', '+0530')
     this.myFormGroup=formBuilder.group({
       "tweet" : new FormControl("",Validators.required),
       "tag" : new FormControl(""),

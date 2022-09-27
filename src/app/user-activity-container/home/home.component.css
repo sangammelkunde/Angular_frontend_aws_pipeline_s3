@@ -19,7 +19,7 @@
 }
 
 .wrapper {
-    max-width: 450px;
+    max-width: 950px;
     min-height: 200px;
     margin: 50px auto;
     padding: 30px;
@@ -40,8 +40,9 @@
 }
 
 .wrapper .top-section .name {
-    font-size: 1rem;
-    color: #555
+    font-size: 1.5rem;
+    color: #555;
+    font-weight: bold;
 }
 
 .wrapper .top-section .tweetDate {

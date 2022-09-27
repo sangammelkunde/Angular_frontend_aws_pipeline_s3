@@ -10,13 +10,13 @@
 }
 
 .wrapper {
-    max-width: 450px;
+    max-width: 950px;
     min-height: 200px;
     margin: 50px auto;
     padding: 20px;
     background-color: #ecf0f3;
-    border-radius: 20px;
-    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff
+    /* border-radius: 20px; */
+    /* box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff */
 }
 
 .wrapper textarea {
@@ -25,7 +25,7 @@
     margin: 5px 5px 5px 0px;
     border-radius: 20px;
     resize: none;
-    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff
+    /* box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff */
 }
 
 ::placeholder {
