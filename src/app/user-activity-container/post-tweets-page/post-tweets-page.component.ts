@@ -33,7 +33,7 @@ export class PostTweetsPageComponent implements OnInit {
   todaysDataTime = '';
 
   constructor(public router : Router, formBuilder : FormBuilder , public postTweetService : TweetsService) { 
-    this.todaysDataTime = formatDate(this.today, 'dd-MM-yyyy', 'en-US', '+0530')
+    this.todaysDataTime = formatDate(this.today, 'dd-MM-yyyy HH:mm:ss', 'en-US', '+0530')
     this.myFormGroup=formBuilder.group({
       "tweet" : new FormControl("",Validators.required),
       "tag" : new FormControl(""),
@@ -56,7 +56,7 @@ export class PostTweetsPageComponent implements OnInit {
                             this.myFormGroup.controls['tweet'].value,
                             sessionStorage.getItem('firstName'),
                             sessionStorage.getItem('lastName'),
-                            this.todaysDataTime
+                            new Date().getTime()
                             )
       
       // calling tweet service for uploading tweet 
@@ -71,7 +71,8 @@ export class PostTweetsPageComponent implements OnInit {
         setTimeout(function() {
           // console.log('hide');
           this.showElement = false;
-        }.bind(this), 3000);
+          this.router.navigate(['/home'])
+        }.bind(this), 1000);
       this.myFormGroup.controls['tweet'].reset();
     //  this.myFormGroup.controls['tag'].reset();
       this.showTweetLength = false;

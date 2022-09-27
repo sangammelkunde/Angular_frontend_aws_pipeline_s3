@@ -1,12 +1,13 @@
+
 <div class="wrapper">
     <div class="logo"> <img src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-bird-symbols-png-logo-0.png" alt=" twitter-logo">
     </div>
     <div class="text-center mt-4 name"> Login </div>
     <form class="p-3 mt-3" [formGroup]="myFormGroup" (ngSubmit)="login()">
 
-        <label for="email">Email: </label>
+        <label for="email">Username: </label>
         <div class="form-field d-flex flex-column">
-            <input class="custom-field form-control" type="text" name="email" id="email" placeholder="Enter your Email" required [formControl]="myFormGroup.controls['email']" [ngClass]="{'warningOutline' : emailValid}" (keyup)="emailValidation(email)" #email>
+            <input class="custom-field form-control" type="text" name="email" id="email" placeholder="Enter your Username" required [formControl]="myFormGroup.controls['email']" [ngClass]="{'warningOutline' : emailValid}" (keyup)="emailValidation(email)" #email>
         </div>
 
         <label for="password">Password: </label>
