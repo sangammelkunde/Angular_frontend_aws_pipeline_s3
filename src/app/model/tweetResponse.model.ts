@@ -10,5 +10,6 @@ export class TweetResponse{
     commentsCount : number;
     likeStatus : boolean;
     comments : Array<Comment>;
+  tweetDate: any;
 }
     
