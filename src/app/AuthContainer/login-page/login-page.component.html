@@ -5,9 +5,9 @@
     <div class="text-center mt-4 name"> Login </div>
     <form class="p-3 mt-3" [formGroup]="myFormGroup" (ngSubmit)="login()">
 
-        <label for="email">Username: </label>
+        <label for="email">Username/Email: </label>
         <div class="form-field d-flex flex-column">
-            <input class="custom-field form-control" type="text" name="email" id="email" placeholder="Enter your Username" required [formControl]="myFormGroup.controls['email']" [ngClass]="{'warningOutline' : emailValid}" (keyup)="emailValidation(email)" #email>
+            <input class="custom-field form-control" type="text" name="email" id="email" placeholder="Enter your Username/email" required [formControl]="myFormGroup.controls['email']" [ngClass]="{'warningOutline' : emailValid}" (keyup)="emailValidation(email)" #email>
         </div>
 
         <label for="password">Password: </label>
